@@ -1,0 +1,220 @@
+
+#intro {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: rgba(0, 0, 0, 0.776); 
+    color: white;
+    margin-top: 200px;
+    margin-left: 20px;
+    
+
+  }
+  
+ 
+  .textContent {
+    max-width: 600px;
+    flex: 1; 
+  }
+  
+  .hello {
+    font-size: 30px;
+    font-weight: 300;
+    color: #f5f5f5;
+  }
+  
+  .introtext {
+    display: block;
+    font-size: 80px;
+    font-weight: 1000;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .introname {
+    color:rgba(233, 11, 11, 0.925);
+  }
+  
+  .role {
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #eaeaea;
+  }
+  
+  .intropara {
+    font-size: 18px;
+    color: #bbb;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  
+  .btn {
+    background-color:rgb(26, 165, 7);
+    color: #1c1c1c;
+    border: none;
+    padding: 25px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    margin-left: 35%;
+    
+    
+  }
+  
+  .btn:hover {
+    background-color:rgba(189, 46, 186, 0.763);
+  }
+  
+  .btn-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  .profileImage {
+    height: 80vh; 
+    position:absolute;
+    margin-left: 900px;
+    margin-top:  -400px;
+    border-radius:500px
+  }
+  .introo{
+    height: 600px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    #intro {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px;
+        margin-top: 100px; /* Adjust margin for small screens */
+    }
+
+    .textContent {
+        max-width: 100%; /* Use full width for text content */
+        text-align: center; /* Center text */
+    }
+
+    .introtext {
+        font-size: 40px; /* Smaller font size */
+    }
+
+    .role {
+        font-size: 30px; /* Adjust role font size */
+    }
+
+    .intropara {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+
+    .btn {
+        width: 100%; /* Make button full width */
+        padding: 50px;
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .profileImage {
+        height: 50vh; /* Adjust profile image size for mobile */
+        margin-left: 0;
+        margin-top: 20px; /* Adjust image margin */
+    }
+}
+
+/* For medium screens (tablets, etc.) */
+@media screen and (max-width: 768px) {
+    #intro {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px;
+        margin-top: 150px;
+    }
+
+    .textContent {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .introtext {
+        font-size: 60px; /* Adjust font size */
+    }
+
+    .role {
+        font-size: 35px; /* Adjust font size */
+    }
+
+    .intropara {
+        font-size: 17px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 50px;
+        font-size: 17px;
+    }
+
+    .profileImage {
+        height: 60vh;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+/* For larger screens (desktops and above) */
+@media screen and (min-width: 769px) {
+    #intro {
+        flex-direction: row; /* Maintain row layout for desktops */
+        padding: 0 50px;
+        margin-top: 200px;
+    }
+
+    .textContent {
+        max-width: 600px;
+        text-align: left;
+    }
+
+    .introtext {
+        font-size: 80px; /* Larger font size for desktop */
+    }
+
+    .role {
+        font-size: 40px;
+    }
+
+    .intropara {
+        font-size: 18px;
+    }
+
+    .btn {
+        width: auto;
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .profileImage {
+        height: 80vh;
+        margin-left: 900px;
+        margin-top: -400px;
+    }
+}
+  

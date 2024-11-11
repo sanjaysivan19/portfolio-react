@@ -1,0 +1,143 @@
+#contactt{
+  padding-top: 150px;
+  height:auto
+}
+.introcontact{
+  text-align: center;
+  font-size: 50px;
+  color:rgb(214, 12, 12); ;
+}
+.line1{
+  margin-top: -30px;
+  margin-right: 850px;
+}
+.line2{
+  margin-top: -1px;
+  margin-left: 849px;
+}
+
+
+.contactcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 100px;
+  background-color: #000000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  height: 600px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  
+}
+
+.contactinfo {
+  max-width: 40%;
+}
+
+.contactinfo h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contactinfo p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color:rgb(210, 14, 14);
+  font-weight: bold;
+  
+}
+
+.contactdetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactitem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.contactform {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactform input,
+.contactform textarea {
+  background-color: #3a4a5f;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contactform .formrow {
+  display: flex;
+  gap: 5px;
+}
+
+.contactform button {
+  background-color: rgb(9, 169, 41);
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactform button:hover {
+  background-color:rgb(254, 9, 9);
+}
+
+
+
+
+
+
+
+/* For screens 1500px and wider */
+@media screen and (min-width: 1500px) {
+  #contactt {
+    padding-top: 150px; /* Adjust padding if needed */
+  }
+
+  .introcontact {
+    font-size: 60px; /* Adjust font size for large screens */
+  }
+
+  .contactcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 600px;
+    padding: 60px 100px; /* Increase padding for larger screens */
+  }
+
+  .contactinfo {
+    max-width: 40%; /* Keep contact info at 40% of the container */
+  }
+
+  .contactform {
+    max-width: 50%; /* Keep contact form at 50% of the container */
+  }
+
+  .contactform button {
+    font-size: 1.3rem; /* Larger button text */
+    padding: 1rem; /* Increase button padding */
+  }
+}
