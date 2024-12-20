@@ -1,96 +1,126 @@
-.introedu{
-    color: rgb(236, 4, 4);
-    text-align: center;
-    font-size: 50px;
-    padding-top: 100px;
-   
-}
-.line1{
-    margin-top: -30px;
-    margin-right: 890px;
-}
-.line2{
-    margin-top: -1px;
-    margin-left: 880px;
-    
-    
+/* General Styling */
+#eduu {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  color: #333;
+  text-align: center;
+  padding: 40px 0;
 }
 
+.introedu {
+  font-size: 40px;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
 
+/* Circular Container */
+.circular-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #000000, #000000);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+/* Center Content */
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  padding: 20px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
 
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding: 20px;
-    background-color: black;
-    margin-top: 100px;
+.center-content h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.center-content p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Circular Items - Positioning */
+.circular-item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #4a90e2;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.circular-item:hover {
+  transform: scale(1.2);
+  background-color: #357ab7;
+  cursor: pointer;
+}
+
+/* Position Items Radially */
+.circular-item:nth-child(2) { top: 0; left: 50%; transform: translateX(-50%); }
+.circular-item:nth-child(3) { top: 15%; right: 10%;  }
+.circular-item:nth-child(4) { top: 50%; right: 0; transform: translateY(-50%); }
+.circular-item:nth-child(5) { bottom: 15%; right: 10%; }
+.circular-item:nth-child(6) { bottom: 0; left: 50%; transform: translateX(-50%); }
+.circular-item:nth-child(7) { bottom: 15%; left: 10%; }
+.circular-item:nth-child(8) { top: 50%; left: 0; transform: translateY(-50%); }
+.circular-item:nth-child(9) { top: 15%; left: 10%; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .circular-container {
+    width: 400px;
+    height: 400px;
   }
-  
-  .timeline-item {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    position: relative;
-    width: 100%;
+
+  .circular-item {
+    width: 80px;
+    height: 80px;
+    font-size: 10px;
   }
-  
-  .timeline-item.left .timeline-content {
-    align-self: flex-start;
-    margin-left: 800px;
+
+  .center-content {
+    width: 180px;
+    padding: 15px;
   }
-  
-  .timeline-item.right .timeline-content {
-    align-self: flex-end;
-    margin-left: 400px;
+}
+
+@media (max-width: 480px) {
+  .circular-container {
+    width: 300px;
+    height: 300px;
   }
-  
-  .timeline-icon {
-    width: 40px;
-    height: 40px;
-    background-color:darkorchid;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+
+  .circular-item {
+    width: 60px;
+    height: 60px;
+    font-size: 8px;
   }
-  
-  .timeline-item.left .timeline-icon {
-    margin-left: 0px;
+
+  .center-content {
+    width: 150px;
+    padding: 10px;
   }
-  
-  .timeline-item.right .timeline-icon {
-    margin-left: 0px;
-  }
-  
-  .timeline-content {
-    background-color:darkorchid;
-    padding: 20px;
-    border-radius: 5px;
-    color: white;
-    max-width: 300px;
-    position: relative;
-  }
-  
-  .timeline-content h3 {
-    margin-top: 0;
-  }
-  
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: darkorchid;
-    transform: translateX(-50%);
-  }
-  
+}
